@@ -9,7 +9,7 @@ def test_convert(capsys):
     assert "Joe" in captured.out
 
 
-def test_convert_2(capsys):
+def test_convert_3(capsys):
     """Correct my_name argument prints"""
     notebookc.convert("Jack")
     captured = capsys.readouterr()
