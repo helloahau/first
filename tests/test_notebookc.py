@@ -1,0 +1,9 @@
+"""Tests for `notebookc` package."""
+from notebookc import notebookc
+
+
+def test_convert(capsys):
+    """Correct my_name argument prints"""
+    notebookc.convert("Joe")
+    captured = capsys.readouterr()
+    assert "Joe" in captured.out
